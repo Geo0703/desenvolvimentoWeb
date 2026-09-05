@@ -1,0 +1,29 @@
+/*Impede formulário de sair da tela (Responsividade) e 0 espaçamento do Navegador*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*passa as variaveis aos elementos do Body*/
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text-main);
+  background-color: var(--color-surface);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*Impede foto de sair da tela (Responvididade)*/
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* tira o sublinhado dos links*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
