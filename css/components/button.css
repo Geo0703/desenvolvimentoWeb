@@ -1,0 +1,80 @@
+/*Base para o Botão*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+
+/*Botão principal*/
+.button--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+/*Animação do Botão principal*/
+.button--primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+
+/*Botão Secundario*/
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+/*Animação do Botão Secundario*/
+.button--secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+
+/*Botão sem cor de fundo*/
+.button--outline {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text-main);
+}
+/*Animação Botão sem cor de fundo*/
+.button--outline:hover {
+  background-color: var(--color-text-main);
+  border-color: var(--color-border);
+  color: #ffffff;
+}
+
+/*Botão para usar nas tabelas*/
+.button--action-table {
+  padding: 4px 10px;
+  font-size: var(--font-size-sm);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+/*Botão Vermelho*/
+.button--danger {
+  color: var(--color-danger);
+  border-color: var(--color-danger);
+  background-color: transparent;
+}
+/*Animção do Botão Vermelho*/
+.button--danger:hover {
+  background-color: var(--color-danger-hover);
+  color:#ffffff;
+}
+
+/*Botão desativado*/
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.button--full-width {
+  width: 100%;
+}
