@@ -1,0 +1,25 @@
+/* Apontar para variavel de espaçamento e cor */
+.footer {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Deixa  que as Tags */
+.footer__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Apontar para variaveis tamanho de font e cor e alinha texto no centro */
+.footer__copyright {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+/*Aponta para variavel de espaço*/
+.footer--compact {
+  padding: var(--spacing-sm);
+}

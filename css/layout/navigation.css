@@ -1,0 +1,51 @@
+/*Deixar sempre o Logo na esquerda e as ações na direita*/
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+/* Apontar para variavel de fonte e cor*/
+.header-nav__brand {
+  font-family: var(--font-family-brand);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Definir a lista como flexivel, espaçamento e remover estilo default */
+.header-nav__list {
+  display: flex;
+  gap: var(--spacing-sm);
+  list-style: none;
+}
+
+/* Apontar para a variavel de fonte e cor */
+.header-nav__link {
+  font-size: var(--font-size-base);
+  color: var(--color-text-main);
+}
+
+/* Definir a navegação como flexivel e Apontar para a variavel de espaçamento */
+.header-nav__search {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+/* Definir a navegação como flexivel, alinha ao centro e Apontar para a variavel de espaçamento */
+.header-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/*Alterar o fundo e a borda no modo de Administração*/
+.header-nav--admin {
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-primary);
+}

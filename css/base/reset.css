@@ -1,4 +1,4 @@
-/*Impede formulário de sair da tela (Responsividade) e 0 espaçamento do Navegador*/
+/* Impedir formulário de sair da tela (Responsividade) e 0 espaçamento do Navegador */
 *,
 *::before,
 *::after {
@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/*passa as variaveis aos elementos do Body*/
+/* Passar as variaveis aos elementos do Body */
 body {
   font-family: var(--font-family-base);
   color: var(--color-text-main);
@@ -16,13 +16,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/*Impede foto de sair da tela (Responvididade)*/
+/* Impedir foto de sair da tela (Responvididade) */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* tira o sublinhado dos links*/
+/* Tirar o sublinhado dos links */
 a {
   text-decoration: none;
   color: inherit;

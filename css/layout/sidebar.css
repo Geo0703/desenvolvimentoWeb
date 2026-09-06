@@ -1,0 +1,42 @@
+/* Apontar variaveis de cor e de espaçamento mostra que será em coluna */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  max-width: 260px;
+}
+
+/* Aponta as variaveis de tamanho de letra e de espaçamento */
+.sidebar-nav__title {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* tirar o estilo default da lista */
+.sidebar-nav__list {
+  list-style: none;
+}
+
+/* Apontar Variavel de espaçamento */
+.sidebar-nav__item {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Estilo de possiveis rotas */
+.sidebar-nav__link {
+  display: block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-main);
+}
+
+/* Sinalizar a rota escolhida */
+.sidebar-nav__link--active {
+  background-color: var(--color-secondary);
+  font-weight: 600;
+  color: var(--color-primary);
+}
