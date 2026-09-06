@@ -78,3 +78,17 @@
 .button--full-width {
   width: 100%;
 }
+
+/* Modificador para botão flutuante dos cards */
+.button--floating {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70%;
+  transform: translate(-50%, 125%);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out, background-color 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
