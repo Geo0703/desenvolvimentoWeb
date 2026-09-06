@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System Showcase - BEM</title>
+
+  <!-- Base -->
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/reset.css">
+
+  <!-- Layout -->
+  <link rel="stylesheet" href="css/layout/navigation.css">
+  <link rel="stylesheet" href="css/layout/footer.css">
+  <link rel="stylesheet" href="css/layout/sidebar.css">
+
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/form.css">
+  <link rel="stylesheet" href="css/components/input.css">
+  <link rel="stylesheet" href="css/components/stat-card.css">
+  <link rel="stylesheet" href="css/components/table.css">
+  <link rel="stylesheet" href="css/components/badge.css">
+  <link rel="stylesheet" href="css/components/tag-chip.css">
+  <link rel="stylesheet" href="css/components/banner.css">
+  <link rel="stylesheet" href="css/components/heading.css">
+  <link rel="stylesheet" href="css/components/avatar.css">
+  <link rel="stylesheet" href="css/components/pagination.css">
+  <link rel="stylesheet" href="css/components/modal.css">
+
+  <!-- Feedback -->
+  <link rel="stylesheet" href="css/feedback/alert.css">
+  <link rel="stylesheet" href="css/feedback/empty-state.css">
+
+  <style>
+    .showcase-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .showcase-section {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .showcase-section__title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-bottom: 2px solid var(--color-secondary);
+      padding-bottom: 8px;
+      color: var(--color-primary);
+    }
+    .showcase-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Header Navigation -->
+  <header class="header-nav">
+    <div class="header-nav__brand">HABIT</div>
+    <ul class="header-nav__list">
+      <li class="header-nav__item"><a href="#" class="header-nav__link">Início</a></li>
+      <li class="header-nav__item"><a href="#" class="header-nav__link">Páginas</a></li>
+      <li class="header-nav__item"><a href="#" class="header-nav__link">Destaques</a></li>
+      <li class="header-nav__item"><a href="#" class="header-nav__link">Assinar</a></li>
+      <li class="header-nav__item"><a href="#" class="header-nav__link">Admin</a></li>
+    </ul>
+    <div class="header-nav__actions">
+      <div class="header-nav__search">
+        <input type="text" class="input input--search" placeholder="Buscar..." style="width: 140px;">
+        <button class="button button--secondary">Buscar</button>
+      </div>
+      <button class="button button--primary">Entrar</button>
+    </div>
+  </header>
+
+  <main class="showcase-container">
+
+    <!-- 2. Hero Banner -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">1. Hero Banner (.hero-banner)</h2>
+      <div class="hero-banner">
+        <div class="hero-banner__content">
+          <h1 class="hero-banner__title">Navegue por tópicos de interesse</h1>
+          <p class="hero-banner__description">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+          <div class="hero-banner__actions">
+            <button class="button button--primary">Explorar categorias</button>
+            <button class="button button--outline">Assine a newsletter</button>
+          </div>
+        </div>
+        <div class="hero-banner__media"></div>
+      </div>
+    </section>
+
+    <!-- 3. Botões -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">2. Botões e Variações (.button)</h2>
+      <div class="showcase-row">
+        <button class="button button--primary">Primary</button>
+        <button class="button button--secondary">Secondary</button>
+        <button class="button button--outline">Outline</button>
+        <button class="button button--action-table">Action Table</button>
+        <button class="button button--danger">Danger</button>
+        <button class="button button--primary button--disabled">Disabled</button>
+      </div>
+    </section>
+
+    <!-- 4. Tags e Chips -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">3. Tags e Chips (.tag-chip)</h2>
+      <div class="showcase-row">
+        <span class="tag-chip tag-chip--card">Work</span>
+        <span class="tag-chip tag-chip--card">Books</span>
+        <span class="tag-chip tag-chip--card">Techno</span>
+      </div>
+      <div class="showcase-row">
+        <span class="tag-chip tag-chip--pill tag-chip--active">Popular</span>
+        <span class="tag-chip tag-chip--pill">Mais recentes</span>
+        <span class="tag-chip tag-chip--pill">IA</span>
+        <span class="tag-chip tag-chip--pill">Produtividade</span>
+      </div>
+    </section>
+
+    <!-- 5. Status Badges -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">4. Badges de Status (.badge)</h2>
+      <div class="showcase-row">
+        <span class="badge badge--status-active">Ativo</span>
+        <span class="badge badge--status-published">Publicado</span>
+        <span class="badge badge--status-review">Em revisão</span>
+        <span class="badge badge--status-pending">Em análise</span>
+        <span class="badge badge--status-blocked">Bloqueado</span>
+        <span class="badge badge--status-draft">Rascunho</span>
+      </div>
+    </section>
+
+    <!-- 6. Stat Cards -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">5. Stat Cards e Grid Admin (.stat-card)</h2>
+      <div class="admin-stats-grid">
+        <div class="stat-card">
+          <div class="stat-card__label">Posts</div>
+          <div class="stat-card__value">128</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Visualizações</div>
+          <div class="stat-card__value">54k</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Inscritos</div>
+          <div class="stat-card__value">12k</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__label">Pendências</div>
+          <div class="stat-card__value">7</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Cards de Conteúdo -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">6. Cards de Conteúdo (.card)</h2>
+      <div class="showcase-row" style="align-items: stretch;">
+        <!-- Card Vertical -->
+        <article class="card card--vertical">
+          <div class="card__thumbnail">Imagem 16:9</div>
+          <div class="card__body">
+            <h3 class="card__title">Título da Postagem 1</h3>
+            <p class="card__meta">31 Jul 2025</p>
+          </div>
+        </article>
+
+        <!-- Card Horizontal -->
+        <article class="card card--horizontal" style="flex: 1; min-width: 280px;">
+          <div class="card__thumbnail">Miniatura</div>
+          <div class="card__body">
+            <h3 class="card__title">Erros de Design que Todos Devem Evitar</h3>
+            <p class="card__meta">Tecnologia • 3 min de leitura</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 8. Formulário e Inputs -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">7. Formulários e Inputs (.form e .input)</h2>
+      <div class="showcase-row" style="align-items: flex-start;">
+        <form class="form form--login" onsubmit="return false;">
+          <h3 class="card__title">Entrar</h3>
+          <div class="form__group">
+            <label class="form__label">E-mail</label>
+            <input type="email" class="input" placeholder="seu@email.com">
+          </div>
+          <div class="form__group">
+            <label class="form__label">Senha</label>
+            <input type="password" class="input" placeholder="••••••••">
+          </div>
+          <div class="form__actions">
+            <button class="button button--primary button--full-width">Entrar</button>
+          </div>
+        </form>
+
+        <!-- Sidebar Administrativa -->
+        <aside class="sidebar-nav" style="flex: 1;">
+          <div class="sidebar-nav__title">Menu Admin</div>
+          <ul class="sidebar-nav__list">
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link sidebar-nav__link--active">Categorias</a></li>
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Criar Post</a></li>
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Escolhas do Editor</a></li>
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Usuários</a></li>
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Fila de revisão</a></li>
+            <li class="sidebar-nav__item"><a href="#" class="sidebar-nav__link">Fila de comentários</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 9. Tabela de Gestão -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">8. Tabela de Gestão (.data-table)</h2>
+      <table class="data-table">
+        <thead class="data-table__head">
+          <tr>
+            <th class="data-table__th">Usuário</th>
+            <th class="data-table__th">E-mail</th>
+            <th class="data-table__th">Status</th>
+            <th class="data-table__th">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="data-table__row">
+            <td class="data-table__td">Usuário #1</td>
+            <td class="data-table__td">email@teste.com</td>
+            <td class="data-table__td"><span class="badge badge--status-active">Ativo</span></td>
+            <td class="data-table__td">
+              <div class="data-table__actions">
+                <button class="button button--action-table">Bloquear</button>
+              </div>
+            </td>
+          </tr>
+          <tr class="data-table__row">
+            <td class="data-table__td">Post #1</td>
+            <td class="data-table__td">autor@teste.com</td>
+            <td class="data-table__td"><span class="badge badge--status-review">Em revisão</span></td>
+            <td class="data-table__td">
+              <div class="data-table__actions">
+                <button class="button button--action-table">Aprovar</button>
+                <button class="button button--action-table button--danger">Reprovar</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 10. Feedback e Diálogo -->
+    <section class="showcase-section">
+      <h2 class="showcase-section__title">9. Feedback, Vazio e Diálogo</h2>
+      <div class="alert alert--success">Operação concluída com sucesso!</div>
+      <div class="alert alert--error">Houve uma falha na validação do formulário.</div>
+      
+      <div class="empty-state">
+        <div class="empty-state__title">Nenhum resultado encontrado</div>
+        <div class="empty-state__description">Tente pesquisar por termos diferentes ou confira as categorias populares.</div>
+      </div>
+
+      <div class="modal-preview">
+        <div class="modal__dialog">
+          <h3 class="modal__title">Confirmar Exclusão</h3>
+          <p class="modal__body">Tem certeza de que deseja excluir este item? Esta ação não poderá ser desfeita.</p>
+          <div class="modal__actions">
+            <button class="button button--outline">Cancelar</button>
+            <button class="button button--danger">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Paginação -->
+    <div class="pagination">
+      <button class="button button--outline">Carregar mais postagens</button>
+    </div>
+
+  </main>
+
+  <!-- 12. Footer -->
+  <footer class="footer">
+    <div class="footer__tags">
+      <span class="tag-chip tag-chip--pill">Instagram</span>
+      <span class="tag-chip tag-chip--pill">Work</span>
+      <span class="tag-chip tag-chip--pill">Bags</span>
+      <span class="tag-chip tag-chip--pill">Lamp</span>
+      <span class="tag-chip tag-chip--pill">Books</span>
+    </div>
+    <div class="footer__copyright">
+      © 2026 Meu Site - Todos os direitos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
