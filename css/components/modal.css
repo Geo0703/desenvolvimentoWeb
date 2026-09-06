@@ -1,0 +1,38 @@
+/* Área de visualizaçao do modal */
+.modal-preview {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+}
+
+/* Conteudo principal do modal */
+.modal__dialog {
+  background-color: var(--color-background);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Titulo do modal */
+.modal__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Texto principal do modal */
+.modal__body {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
+
+/* Ações do modal alinhadas a direita */
+.modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}

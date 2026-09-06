@@ -5,4 +5,4 @@
 css/
 ├── base/          # Fundações globais (variáveis, tokens e normalização de reset)
 ├── layout/        # Áreas estruturais da página (cabeçalho, rodapé e menus laterais)
-└── components/    # Blocos reutilizáveis independentes (Botões, Cards)
+└── components/    # Blocos reutilizáveis independentes (botões, cards, tabelas, etc.)

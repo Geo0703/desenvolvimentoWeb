@@ -1,0 +1,41 @@
+/* Base tabela */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--color-background);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+/* Cabeçalho da tabela */
+.data-table__head {
+  background-color: var(--color-surface);
+  border-bottom: 2px solid var(--color-border);
+}
+
+/* Células de título da tabela */
+.data-table__th {
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* Linha de dados da tabela */
+.data-table__row {
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Células de conteúdo da tabela */
+.data-table__td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-base);
+  vertical-align: middle;
+}
+
+/* Ações disponíveis em cada linha */
+.data-table__actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
