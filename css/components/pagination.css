@@ -1,0 +1,6 @@
+/* Contêiner da paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-md);
+}

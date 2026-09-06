@@ -13,7 +13,9 @@
   --color-primary: #1e2b56;
   --color-primary-hover: #2949CC;
   --color-secondary: #3d5099;
-  --color-danger: #ee3709;
+  --color-secondary-hover: #0a1a51;
+  --color-danger: #ff3300;
+  --color-danger-hover: #ee3709;
   --color-background: #ffffff;
   --color-surface: #f7f9fa;
   --color-text-main: #292b33;
