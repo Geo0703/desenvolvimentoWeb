@@ -1,0 +1,24 @@
+/* Base do alerta */
+.alert {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Mensagens de sucesso */
+.alert--success {
+  background-color: #e6f4ea;
+  color: #137333;
+  border-color: #b7e1cd;
+}
+
+/* Mensagens de erro */
+.alert--error {
+  background-color: #fce8e6;
+  color: var(--color-danger);
+  border-color: #fad2cf;
+}
