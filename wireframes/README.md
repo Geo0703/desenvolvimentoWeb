@@ -83,7 +83,7 @@ projeto-mobile/
 - **Função:** Gestão de usuários cadastrados no sistema. Apresenta listagem de contas, seus respectivos status (ex.: Ativo, Bloqueado) e botões de ação para moderação e controle de acesso ("Bloquear" / "Desbloquear").
 - **Componentes Identificados:** `admin-metrics`, `admin-menu`, `data-table`, `badge--status`, `button--action`.
 
-![Wireframe Tela 08](./tela_08.png)
+![Wireframe Tela 08](./tela_08G.png)
 
 ---
 
@@ -91,7 +91,7 @@ projeto-mobile/
 - **Função:** Moderação de publicações enviadas por autores antes da publicação oficial. Apresenta o título da postagem, o autor, status "Em revisão" e botões rápidos para "Aprovar" ou "Reprovar".
 - **Componentes Identificados:** `admin-metrics`, `admin-menu`, `data-table`, `button--success`, `button--danger`.
 
-![Wireframe Tela 09](./tela_09.png)
+![Wireframe Tela 09](./tela_09G.png)
 
 ---
 
@@ -99,7 +99,7 @@ projeto-mobile/
 - **Função:** Painel de moderação para comentários submetidos pela comunidade. Lista comentários pendentes de avaliação com autoria e possibilita sua aprovação ou reprovação em lote ou individualmente.
 - **Componentes Identificados:** `admin-metrics`, `admin-menu`, `data-table`, `button--success`, `button--danger`.
 
-![Wireframe Tela 10](./tela_10.png)
+![Wireframe Tela 10](./tela_10G.png)
 
 ---
 
