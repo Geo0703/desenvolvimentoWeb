@@ -75,7 +75,7 @@ projeto-mobile/
 - **Função:** Curadoria dos artigos destacados que aparecerão na tela inicial. Lista os artigos ativos e permite agendar exibições ou remover itens da lista de destaques.
 - **Componentes Identificados:** `admin-metrics`, `admin-menu`, `search-input`, `data-table`, `button--outline`.
 
-![Wireframe Tela 07](.s/tela_07.png)
+![Wireframe Tela 07](./tela_07.png)
 
 ---
 
