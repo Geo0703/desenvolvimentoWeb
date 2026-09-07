@@ -1,7 +1,7 @@
 /* Base do Badge */
 .badge {
   display: inline-block;
-  padding: 2px 8px;
+  padding: var(--spacing-xxs) var(--spacing-sm);
   font-size: var(--font-size-sm);
   font-weight: 500;
   border-radius: var(--radius-full);
@@ -10,20 +10,20 @@
 /* Status ativo ou publicado */
 .badge--status-active,
 .badge--status-published {
-  background-color: #e6f4ea;
-  color: #137333;
+  background-color: var(--color-success-bg);
+  color: var(--color-success-text);
 }
 
 /* Status em revisao ou pendente */
 .badge--status-review,
 .badge--status-pending {
-  background-color: #fef7e0;
-  color: #b06000;
+  background-color: var(--color-warning-bg);
+  color: var(--color-warning-text);
 }
 
 /* Status bloqueado */
 .badge--status-blocked {
-  background-color: #fce8e6;
+  background-color: var(--color-error-bg);
   color: var(--color-danger);
 }
 
