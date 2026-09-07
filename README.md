@@ -1,19 +1,50 @@
-| Componente | Função | Onde Aparece | Telas | Variações |
-| :--- | :--- | :--- | :--- | :--- |
-| **Navigation (Header)** | Navegação global, barra de busca rápida e autenticação | Topo de todas as telas públicas e administrativas | tela_01 a tela_14 | `public`, `authenticated`, `with-search`, `mobile-collapsed` |
-| **Footer** | Atalhos horizontais de tópicos rápidos e copyright da aplicação | Rodapé de todas as telas | tela_01 a tela_14 | `default`, `compact-mobile` |
-| **Sidebar Navigation** | Navegação interna entre as seções do painel administrativo | Painel Administrativo | tela_05, tela_06, tela_07, tela_08, tela_09, tela_10 | `expanded`, `drawer-mobile`, `with-active-state` |
-| **Hero Banner** | Bloco de apresentação inicial, proposta de valor e CTAs principais | Página Inicial | tela_01 | `default`, `with-image` |
-| **Card** | Apresentação modular de posts, artigos e leituras recomendadas | Home, Categorias, Destaques, Busca, Perfil | tela_01, tela_02, tela_03, tela_11, tela_14 | `grid` (vertical), `list` (horizontal), `featured`, `with-badge` |
-| **Stat Card** | Exibição resumida de métricas quantitativas de gestão | Topo do Painel Administrativo | tela_05, tela_06, tela_07, tela_08, tela_09, tela_10 | `default`, `metric-counter` |
-| **Button** | Gatilho para submissões, disparos de ação e comandos operacionais | Todas as telas | tela_01 a tela_14 | `primary`, `secondary`, `outline`, `action-table`, `disabled`, `loading` |
-| **Form** | Agrupamento lógico e controle de submissão de dados | Login, Cadastro, Newsletter, Criar Post, Perfil | tela_04, tela_06, tela_12, tela_13, tela_14 | `login`, `register`, `newsletter`, `post-editor`, `user-settings` |
-| **Input / Field** | Campos individuais para captura de textos, senhas, termos e mídias | Telas públicas e painel administrativo | tela_01 a tela_14 | `text`, `email`, `password`, `search`, `textarea`, `file`, `checkbox` |
-| **Table / Admin List** | Estrutura tabular para exibição de registros e ações operacionais | Telas administrativas de gestão e filas de espera | tela_05, tela_07, tela_08, tela_09, tela_10 | `categories`, `editor-picks`, `users-management`, `moderation-queue` |
-| **Badge / Status Tag** | Sinalização visual do estado de postagens, contas e comentários | Usuários, Filas de revisão, Moderação e Perfil | tela_08, tela_09, tela_10, tela_14 | `status-active`, `status-blocked`, `status-draft`, `status-review`, `status-published` |
-| **Tag / Chip / Filter** | Classificação rápida por tópicos e seleção de filtros de listagem | Home, Categorias e Rodapé | tela_01, tela_02, tela_01 a tela_14 | `category-card`, `pill`, `filter-selectable` |
-| **Avatar** | Identificação visual da imagem de perfil do usuário com troca | Perfil (e fluxos de autor nas filas) | tela_14 (expansível para 08, 09, 10) | `large-editable`, `thumb`, `with-fallback` |
-| **Modal / Dialog** | Janelas de confirmação para ações destrutivas ou aprovação rápida | Módulos Administrativos | tela_05, tela_08, tela_09, tela_10 | `confirm-delete`, `confirm-block`, `confirm-action` |
-| **Alert / Toast** | Mensagens de feedback assíncrono (sucesso, erro ou validação) | Newsletter, Login, Cadastro e Ações Admin | tela_04, tela_05 a tela_10, tela_12, tela_13 | `success`, `error`, `info`, `dismissible` |
-| **Empty State** | Indicador de ausência de registros ou resultados | Busca sem termos, Filas vazias e Perfil | tela_05, tela_07 a tela_11, tela_14 | `no-results`, `empty-queue` |
-| **Pagination / Load More** | Paginação e carregamento de blocos de conteúdos | Listagens de categorias, destaques e busca | tela_02, tela_03, tela_11 | `load-more-button`, `infinite-scroll` |
+# Entrega  da Atividade de Usabilidade, desenvolvimento web, mobile e jogos
+
+Este repositório contém o protótipo em baixa fidelidade (wireframes mobile) e a arquitetura inicial de estilos utilizando a metodologia **BEM (Block, Element, Modifier)** para uma aplicação web/mobile.
+
+O foco desta etapa é estruturar visualmente a hierarquia de navegação mobile e mapear componentes e classes CSS reutilizáveis
+
+---
+
+## 📂 Organização do Repositório
+```text
+projeto-mobile/
+├── wireframes/
+│   ├── tela_01.png
+│   ├── tela_02.png
+│   ├── tela_03.png
+│   ├── tela_04.png
+│   ├── tela_05.png
+│   ├── tela_06.png
+│   ├── tela_07.png
+│   ├── tela_08.png
+│   ├── tela_09.png
+│   ├── tela_10.png
+│   ├── tela_11.png
+│   ├── tela_12.png
+│   ├── tela_13.png
+│   └── tela_14.png
+├── css/
+│   ├── variables.css
+│   ├── button.css
+│   ├── card.css
+│   ├── form.css
+│   ├── navigation.css
+│   ├── table.css
+│   ├── metrics.css
+│   └── main.css
+└── README.md
+```
+
+Integrantes do Grupo:
+
+[Bruno Lopes](https://github.com/BruinkLopes) - 824118189
+
+[Geovane Augusto](https://github.com/Geo0703) - 824124157
+
+[Graziele Matsuzak](https://github.com/Grazi122) - 824127569
+
+[Olivia Frankiw](https://github.com/OliviaFrankiw) - 824118846
+
+[João Luiz Santana Borean](https://github.com/joaoborean) - 82415181
+
