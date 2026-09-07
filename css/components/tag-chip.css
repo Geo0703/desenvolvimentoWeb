@@ -2,9 +2,9 @@
 .tag-chip {
   display: inline-flex;
   align-items: center;
-  padding: 6px 12px;
+  padding: var(--spacing-6) var(--spacing-12);
   background-color: var(--color-background);
-  border: 1px solid var(--color-border);
+  border: var(--border-width-thin) solid var(--color-border);
   border-radius: var(--radius-md);
   font-size: var(--font-size-sm);
 }
@@ -25,6 +25,6 @@
 /* Estado ativo do chip */
 .tag-chip--active {
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: var(--color-white);
   border-color: var(--color-primary);
 }

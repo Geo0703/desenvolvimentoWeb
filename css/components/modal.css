@@ -1,6 +1,6 @@
 /* Área de visualizaçao do modal */
 .modal-preview {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--color-overlay);
   padding: var(--spacing-md);
   border-radius: var(--radius-md);
   display: flex;
@@ -14,7 +14,7 @@
   padding: var(--spacing-md);
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-modal);
 }
 
 /* Titulo do modal */
