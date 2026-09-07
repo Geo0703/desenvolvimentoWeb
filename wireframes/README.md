@@ -1,5 +1,4 @@
 # Telas
-# Telas
 
 ## 1. Organização da Arquitetura
 projeto-mobile/
